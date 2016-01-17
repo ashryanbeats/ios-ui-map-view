@@ -22,8 +22,13 @@
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     
+    MKCoordinateRegion region = {{0.0, 0.0}, {0.0, 0.0}};
+    region.center.latitude = 40.7828647;
+    region.center.longitude = -73.96535510000001;
+    region.span.latitudeDelta = 0.18f;
+    region.span.longitudeDelta = 0.18f;
     
-    
+    [self.mapView setRegion:region animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
