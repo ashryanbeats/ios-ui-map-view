@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MapPin.h"
 
 @interface ViewController ()
 
@@ -22,13 +23,20 @@
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     
+    // Add region and zoom
     MKCoordinateRegion region = {{0.0, 0.0}, {0.0, 0.0}};
     region.center.latitude = 40.7828647;
     region.center.longitude = -73.96535510000001;
     region.span.latitudeDelta = 0.18f;
     region.span.longitudeDelta = 0.18f;
-    
     [self.mapView setRegion:region animated:YES];
+    
+    // Add annotation
+    MapPin *annotation = [[MapPin alloc] init];
+    annotation.title = @"Central Park";
+    annotation.subtitle = @"New York City";
+    annotation.coordinate = region.center;
+    [self.mapView addAnnotation:annotation];
 }
 
 - (void)didReceiveMemoryWarning {
