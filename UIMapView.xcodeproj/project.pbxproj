@@ -16,6 +16,7 @@
 		8600D0C41C4BFD8C006DC24C /* UIMapViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600D0C31C4BFD8C006DC24C /* UIMapViewTests.m */; };
 		8600D0CF1C4BFD8C006DC24C /* UIMapViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600D0CE1C4BFD8C006DC24C /* UIMapViewUITests.m */; };
 		8600D0DD1C4BFDD8006DC24C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8600D0DC1C4BFDD8006DC24C /* MapKit.framework */; };
+		8600D0E01C4C2BD1006DC24C /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600D0DF1C4C2BD1006DC24C /* MapPin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8600D0CE1C4BFD8C006DC24C /* UIMapViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIMapViewUITests.m; sourceTree = "<group>"; };
 		8600D0D01C4BFD8C006DC24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8600D0DC1C4BFDD8006DC24C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8600D0DE1C4C2BD1006DC24C /* MapPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		8600D0DF1C4C2BD1006DC24C /* MapPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				8600D0AD1C4BFD8C006DC24C /* AppDelegate.m */,
 				8600D0AF1C4BFD8C006DC24C /* ViewController.h */,
 				8600D0B01C4BFD8C006DC24C /* ViewController.m */,
+				8600D0DE1C4C2BD1006DC24C /* MapPin.h */,
+				8600D0DF1C4C2BD1006DC24C /* MapPin.m */,
 				8600D0B21C4BFD8C006DC24C /* Main.storyboard */,
 				8600D0B51C4BFD8C006DC24C /* Assets.xcassets */,
 				8600D0B71C4BFD8C006DC24C /* LaunchScreen.storyboard */,
@@ -282,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8600D0E01C4C2BD1006DC24C /* MapPin.m in Sources */,
 				8600D0B11C4BFD8C006DC24C /* ViewController.m in Sources */,
 				8600D0AE1C4BFD8C006DC24C /* AppDelegate.m in Sources */,
 				8600D0AB1C4BFD8B006DC24C /* main.m in Sources */,
@@ -508,6 +514,7 @@
 				8600D0D51C4BFD8C006DC24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8600D0D61C4BFD8C006DC24C /* Build configuration list for PBXNativeTarget "UIMapViewTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +523,7 @@
 				8600D0D81C4BFD8C006DC24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8600D0D91C4BFD8C006DC24C /* Build configuration list for PBXNativeTarget "UIMapViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +532,7 @@
 				8600D0DB1C4BFD8C006DC24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
