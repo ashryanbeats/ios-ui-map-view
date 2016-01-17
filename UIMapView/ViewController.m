@@ -22,6 +22,8 @@
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,5 +61,8 @@
     
     self.mapView.showsUserLocation = YES;
     
+}
+
+- (IBAction)getRoute:(id)sender {
 }
 @end

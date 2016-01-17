@@ -20,6 +20,7 @@
 
 - (IBAction)changeMap:(id)sender;
 - (IBAction)locateUser:(id)sender;
+- (IBAction)getRoute:(id)sender;
 
 @end
 
