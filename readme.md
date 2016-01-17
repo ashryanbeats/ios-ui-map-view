@@ -7,3 +7,5 @@ Further work:
 - Share location
 	- Current location
 	- Other location
+- Remove hardcoded location
+- Remove hardcoded coordinates from `urlString`

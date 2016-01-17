@@ -77,5 +77,9 @@
 }
 
 - (IBAction)getRoute:(id)sender {
+    
+    NSString *urlString = @"http://maps.apple.com/maps?daddr=40.7828647,-73.96535510000001";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+    
 }
 @end
